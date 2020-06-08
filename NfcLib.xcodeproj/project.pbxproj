@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		93A864172488F8290089D7D5 /* NfcLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A864152488F8290089D7D5 /* NfcLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A864412488FBF00089D7D5 /* NfcDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A864402488FBF00089D7D5 /* NfcDelegate.swift */; };
+		93A864432488FDC50089D7D5 /* NfcFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A864422488FDC50089D7D5 /* NfcFactory.swift */; };
+		93A86445248900C10089D7D5 /* ReadNfcFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A86444248900C10089D7D5 /* ReadNfcFactory.swift */; };
+		93A86447248900E70089D7D5 /* WriteNfcFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A86446248900E70089D7D5 /* WriteNfcFactory.swift */; };
+		93A864492489021A0089D7D5 /* ReadNfc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A864482489021A0089D7D5 /* ReadNfc.swift */; };
+		93A8644B248903CE0089D7D5 /* WriteNfc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8644A248903CE0089D7D5 /* WriteNfc.swift */; };
+		93A8645424892D630089D7D5 /* ReadSessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A8645324892D630089D7D5 /* ReadSessionHelper.swift */; };
+		93F7D168248A541C00B965DB /* ReadNfcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7D167248A541C00B965DB /* ReadNfcProtocol.swift */; };
+		93F7D16A248A542C00B965DB /* WriteNFCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7D169248A542C00B965DB /* WriteNFCProtocol.swift */; };
+		93F7D16C248A5F4900B965DB /* WriteSessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7D16B248A5F4900B965DB /* WriteSessionHelper.swift */; };
+		93F7D16E248AC2F100B965DB /* NfcDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7D16D248AC2F100B965DB /* NfcDelegateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93A864122488F8290089D7D5 /* NfcLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NfcLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A864152488F8290089D7D5 /* NfcLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NfcLib.h; sourceTree = "<group>"; };
 		93A864162488F8290089D7D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A864402488FBF00089D7D5 /* NfcDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcDelegate.swift; sourceTree = "<group>"; };
+		93A864422488FDC50089D7D5 /* NfcFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcFactory.swift; sourceTree = "<group>"; };
+		93A86444248900C10089D7D5 /* ReadNfcFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNfcFactory.swift; sourceTree = "<group>"; };
+		93A86446248900E70089D7D5 /* WriteNfcFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNfcFactory.swift; sourceTree = "<group>"; };
+		93A864482489021A0089D7D5 /* ReadNfc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNfc.swift; sourceTree = "<group>"; };
+		93A8644A248903CE0089D7D5 /* WriteNfc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNfc.swift; sourceTree = "<group>"; };
+		93A8645324892D630089D7D5 /* ReadSessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSessionHelper.swift; sourceTree = "<group>"; };
+		93F7D167248A541C00B965DB /* ReadNfcProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNfcProtocol.swift; sourceTree = "<group>"; };
+		93F7D169248A542C00B965DB /* WriteNFCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNFCProtocol.swift; sourceTree = "<group>"; };
+		93F7D16B248A5F4900B965DB /* WriteSessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteSessionHelper.swift; sourceTree = "<group>"; };
+		93F7D16D248AC2F100B965DB /* NfcDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcDelegateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +68,61 @@
 		93A864142488F8290089D7D5 /* NfcLib */ = {
 			isa = PBXGroup;
 			children = (
+				93A8645224892D3C0089D7D5 /* helpers */,
+				93A8645124891D7E0089D7D5 /* extensions */,
+				93A8643F2488FBBB0089D7D5 /* nfc */,
+				93A8643E2488FBA40089D7D5 /* protocols */,
+				93A8643D2488FB5C0089D7D5 /* factories */,
 				93A864152488F8290089D7D5 /* NfcLib.h */,
 				93A864162488F8290089D7D5 /* Info.plist */,
 			);
 			path = NfcLib;
+			sourceTree = "<group>";
+		};
+		93A8643D2488FB5C0089D7D5 /* factories */ = {
+			isa = PBXGroup;
+			children = (
+				93A864422488FDC50089D7D5 /* NfcFactory.swift */,
+				93A86444248900C10089D7D5 /* ReadNfcFactory.swift */,
+				93A86446248900E70089D7D5 /* WriteNfcFactory.swift */,
+			);
+			name = factories;
+			sourceTree = "<group>";
+		};
+		93A8643E2488FBA40089D7D5 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93A864402488FBF00089D7D5 /* NfcDelegate.swift */,
+				93F7D167248A541C00B965DB /* ReadNfcProtocol.swift */,
+				93F7D169248A542C00B965DB /* WriteNFCProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		93A8643F2488FBBB0089D7D5 /* nfc */ = {
+			isa = PBXGroup;
+			children = (
+				93A864482489021A0089D7D5 /* ReadNfc.swift */,
+				93A8644A248903CE0089D7D5 /* WriteNfc.swift */,
+			);
+			name = nfc;
+			sourceTree = "<group>";
+		};
+		93A8645124891D7E0089D7D5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93F7D16D248AC2F100B965DB /* NfcDelegateExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		93A8645224892D3C0089D7D5 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93A8645324892D630089D7D5 /* ReadSessionHelper.swift */,
+				93F7D16B248A5F4900B965DB /* WriteSessionHelper.swift */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +168,7 @@
 				TargetAttributes = {
 					93A864112488F8290089D7D5 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A8645424892D630089D7D5 /* ReadSessionHelper.swift in Sources */,
+				93F7D16E248AC2F100B965DB /* NfcDelegateExtensions.swift in Sources */,
+				93A864432488FDC50089D7D5 /* NfcFactory.swift in Sources */,
+				93F7D16A248A542C00B965DB /* WriteNFCProtocol.swift in Sources */,
+				93A864412488FBF00089D7D5 /* NfcDelegate.swift in Sources */,
+				93A86447248900E70089D7D5 /* WriteNfcFactory.swift in Sources */,
+				93A86445248900C10089D7D5 /* ReadNfcFactory.swift in Sources */,
+				93F7D168248A541C00B965DB /* ReadNfcProtocol.swift in Sources */,
+				93A864492489021A0089D7D5 /* ReadNfc.swift in Sources */,
+				93F7D16C248A5F4900B965DB /* WriteSessionHelper.swift in Sources */,
+				93A8644B248903CE0089D7D5 /* WriteNfc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +345,7 @@
 		93A8641B2488F8290089D7D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PXCSVWZ6JZ;
@@ -276,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maliotis.NfcLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +371,7 @@
 		93A8641C2488F8290089D7D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PXCSVWZ6JZ;
