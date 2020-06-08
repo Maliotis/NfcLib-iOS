@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 public class WriteNfcFactory: NfcFactory<WriteNfc> {
-    
     override func getNfc(viewController: UIViewController) -> WriteNfc {
         return WriteNfc(viewController: viewController)
     }

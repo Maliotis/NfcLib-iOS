@@ -16,6 +16,7 @@ public class NfcFactory<T: NfcDelegate> {
      - parameter viewController: The viewController where the alert will show
      - returns: the correct Nfc type: ReadNfc, WriteNfc
      */
+
     func getNfc(viewController: UIViewController) -> T {
         // TODO
         return ReadNfc(viewController: viewController) as! T
@@ -27,6 +28,7 @@ public class NfcFactory<T: NfcDelegate> {
      - typeOf: The type of Nfc: ReadNfc or WriteNfc
      - viewController: The viewController where the alert will show
      */
+
     public static func create<T: NfcDelegate>(viewController: UIViewController) -> T {
         
         switch T.self {
@@ -36,6 +38,7 @@ public class NfcFactory<T: NfcDelegate> {
             return WriteNfcFactory().getNfc(viewController: viewController) as! T
         default:
             fatalError("None of the above")
+
         }
     }
     
