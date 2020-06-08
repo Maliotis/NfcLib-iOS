@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 A helper Nfc library that reads NDEF messages and contents from Tags
                    DESC
 
-  spec.homepage     = "http://maliotis.com/NfcLib"
+  spec.homepage     = "http://google.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,7 +65,7 @@ A helper Nfc library that reads NDEF messages and contents from Tags
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "13.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -91,8 +91,8 @@ A helper Nfc library that reads NDEF messages and contents from Tags
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "NfcLib", "NfcLib/*/*.swift"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -134,5 +134,6 @@ A helper Nfc library that reads NDEF messages and contents from Tags
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  spec.swift_version = "5"
 
 end
