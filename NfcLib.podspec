@@ -91,7 +91,7 @@ A helper Nfc library that reads NDEF messages and contents from Tags
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "NfcLib", "NfcLib/*/*.swift"
+  spec.source_files  = "NfcLib/*.h", "NfcLib/*/*.swift"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
