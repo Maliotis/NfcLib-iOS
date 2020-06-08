@@ -1,5 +1,7 @@
 # NfcLib-iOS
-An easy to use Nfc library for iOS
+An easy to use Nfc library for iOS.
+
+Checkout the NFCLib for Android [NFC-Android](https://github.com/Maliotis/NFCLib-Android)
 
 ## Setup
 
