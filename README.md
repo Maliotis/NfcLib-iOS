@@ -34,10 +34,10 @@ override func viewDidLoad() {
  
  }
  
- /**
-     Handle the results from NTAG
-     */
-    func handleResults(results: [Any]) {
+/**
+ Handle the results from NTAG
+*/
+func handleResults(results: [Any]) {
         for (index, result) in results.enumerated() {
             switch result {
             case is String:
@@ -51,19 +51,19 @@ override func viewDidLoad() {
                 debugPrint("No data :(")
             }
         }
-    }
+}
     
-    func displayResults(_ index: Int, result: String) {
-        var prevText = resultsTextView.text!
-        prevText += "\(index+1). \(result)\n"
-        resultsTextView.text = prevText
-    }
+func displayResults(_ index: Int, result: String) {
+     var prevText = resultsTextView.text!
+     prevText += "\(index+1). \(result)\n"
+     resultsTextView.text = prevText
+}
     
-    func displayResults(_ index: Int, result: URL) {
-        var prevText = resultsTextView.text!
-        prevText += "\(index+1). \(result.absoluteString)\n"
-        resultsTextView.text = prevText
-    }
+func displayResults(_ index: Int, result: URL) {
+    var prevText = resultsTextView.text!
+    prevText += "\(index+1). \(result.absoluteString)\n"
+    resultsTextView.text = prevText
+}
 
 ```
 
@@ -136,7 +136,7 @@ func scan() {
                 }
             }
         }
-    }
+}
 
 ```
 
